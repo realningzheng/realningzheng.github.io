@@ -1,0 +1,3 @@
+## Intro
+
+My research interests falls at the interaction of Human-Computer Interaction (HCI), machine learning (ML) and multimodal perception, where I use human-centered methods to design, build and evaluate human-AI collaborative system to to empower individuals to create, configure, and extend AI-powered computing systems. I am currenting working on two projects: Generating immersive spatial audio for 2D monaural videos, where we build a system to enable end users manipulating and generating spatial audio using the SOTA models in CV and Auditory. 2. Error detection and repairing for NL to SQL models.   
