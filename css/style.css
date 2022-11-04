@@ -2248,7 +2248,7 @@ ol.comment-list li .children li {
 }
 /* Blog & Post sidebar */
 .blog-sidebar .widget {
-    background: #fff;
+    /* background: #fff; */
     padding: 30px 20px;
     margin-bottom: 30px;
     overflow: hidden;
