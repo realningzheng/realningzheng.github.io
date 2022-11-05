@@ -43,7 +43,7 @@ body {
 }
 body {
     font-family: 'Didact Gothic', sans-serif;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.75em;
     font-weight: 400;
     color: #777;
@@ -66,7 +66,7 @@ h6 {
 /* paragraph */
 p {
     font-family: 'Didact Gothic', sans-serif;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.75em;
     margin: 0 0 20px;
     color: #777;
@@ -77,7 +77,7 @@ ul {
 }
 /* links */
 a {
-    color: #000;
+    color: #f6ae2d;
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s;
@@ -646,6 +646,7 @@ hr {
 }
 /* Menu */
 #lonon-main-menu {
+    margin: auto;
     margin-bottom: 90px;
 }
 #lonon-aside .lonon-main-menu,
@@ -2399,7 +2400,7 @@ ol.comment-list li .children li {
 }
 .map {	
 	-webkit-filter: grayscale(100%);
-	filter: grayscale(100%);
+	filter: grayscale(0%);
 	}
 
 

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Zheng Ning</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link rel="icon" type="image/png" href="images/nd.png" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Playfair+Display&display=swap">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/et-lineicons.css">
@@ -41,11 +41,11 @@
             </h1>
             <!-- Menu -->
             <nav class="lonon-main-menu">
-                <ul>
-                    <li class="active"><a href='index.html'>Home</a></li>
-                    <li><a href='about.html'>About</a></li>
+                <ul style="text-align: center;">
+                    <li><a href='index.html'>Home</a></li>
+                    <!-- <li><a href='about.html'>About</a></li> -->
                     <!-- <li><a href='services.html'>Services</a></li> -->
-                    <li><a href='portfolio.html'>Portfolio</a></li>
+                    <li class="active"><a href='portfolio.html'>Portfolio</a></li>
                     <!-- <li class="lonon-sub"><a href="#0">Pages</a>
                         <ul>
                             <li><a href="pricing.html">Pricing Plan</a></li>
@@ -56,7 +56,8 @@
                             <li><a href="404.html">404 Page</a></li>
                         </ul>
                     </li> -->
-                    <li><a href='blog.html'>Blog</a></li>
+                    <!-- <li><a href='blog.html'>Blog</a></li> -->
+                    <li><a href="resources/CV_Zheng_Ning.pdf">CV</a></li>
                     <li><a href='contact.html'>Contact</a></li>
                 </ul>
             </nav>
@@ -74,112 +75,82 @@
         <!-- Main Section -->
         <div id="lonon-main">
             <!-- Portfolio -->
-            <section class="section-padding  animate-box" data-animate-effect="fadeInUp">
+            <section class="section-padding animate-box" data-animate-effect="fadeInUp">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12"> 
-                            <div class="section-subtitle">Portfolio</div>
+                            <div class="section-subtitle"><a href="portfolio.html" class="color-gri">Portfolio</a></div>
                             <div class="section-title">Posters</div>
                         </div>
                     </div>
                     <div class="row">
-                        <ul class="col list-unstyled list-inline mb-0 portfolio-menu" id="menu-filter">
-                            <li class="list-inline-item"><a class="active" data-filter="*">All</a></li>
-                            <!-- <li class="list-inline-item"><a class="" data-filter=".youtube">Youtube</a></li>
-                            <li class="list-inline-item"><a class="" data-filter=".vimeo">Vimeo</a></li>
-                            <li class="list-inline-item"><a class="" data-filter=".image">Image</a></li>
-                            <li class="list-inline-item"><a class="" data-filter=".detail">Detail Page</a></li> -->
-                        </ul>
+                        <div class="col-md-7">
+                            <div class="gallery-item">
+                                <a href="images/portfolio/lucyinstitute_poster_audiovisual.jpeg" title="" class="img-zoom">
+                                    <div class="gallery-box">
+                                        <div class="gallery-img"> <img src="images/portfolio/lucyinstitute_poster_audiovisual.jpeg" class="img-fluid mx-auto d-block" alt=""> </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="project-desc mt-5">
+                                <p class="mb-2"><b>Topic:</b> Towards Effective Multi-Modal Human-AI Collaboration on Audio-Visual Data </p>
+                                <!-- <p class="mb-2"><b>Event:</b> Lucy institute .</p> -->
+                                <p class="mb-2"><b>Abstract:</b> In our series of projects, we explore building multi-sensory human-AI collaborative systems to meet actual user needs in different areas. Here we present two projects:
+                                <b>MIMOSA:</b> A human-AI co-creation system for generating spatial audio effects on videos; <b>BISCUIT:</b> A multi-modal video scene exploration system for users with visual impairments</p>
+                                
+                            </div>
+                        </div>
                     </div>
-                    <!-- Important Note: Some functionality (ajax, iframes, etc) will not work when you're opening local file directly on your browser, the code must be running on a web server. (Example: popup text, local youtube, vimeo url links.) Source: https://dimsemenov.com/plugins/magnific-popup/ -->
-                    <div class="row portfolio-filter mt-3">
-                        <div class="col-md-4 portfolio-item youtube">
-                            <a href="https://www.youtube.com/watch?v=CU9rd0xB_ds" class="img-zoom popup-youtube">
-                                <div class="portfolio-box">
-                                    <div class="portfolio-img"> <img src="images/portfolio/02.jpg" class="img-fluid mx-auto d-block" alt=""> </div>
-                                    <div class="portfolio-detail">
-                                        <h4 class="mb-0">Model Fashion</h4>
-                                        <p class="mb-3">YouTube</p>
+                </div>
+            </section>
+            <div class="divider1"></div>
+            <section class="section-padding animate-box" data-animate-effect="fadeInUp">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="gallery-item">
+                                <a href="images/portfolio/lucyinstitute_peanut.jpg" title="" class="img-zoom">
+                                    <div class="gallery-box">
+                                        <div class="gallery-img"> <img src="images/portfolio/lucyinstitute_peanut.jpg" class="img-fluid mx-auto d-block" alt=""> </div>
                                     </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                         </div>
-                        <div class="col-md-4 portfolio-item vimeo">
-                            <a href="https://vimeo.com/462906932" class="img-zoom popup-vimeo">
-                                <div class="portfolio-box">
-                                    <div class="portfolio-img"> <img src="images/portfolio/04.jpg" class="img-fluid mx-auto d-block" alt=""> </div>
-                                    <div class="portfolio-detail">
-                                        <h4 class="mb-0">Cycling illos</h4>
-                                        <p class="mb-3">Vimeo</p>
-                                    </div>
-                                </div>
-                            </a>
+                        <div class="col-md-5">
+                            <div class="project-desc mt-5">
+                                <p class="mb-2"><b>Topic:</b> PEANUT: A Human-AI Collaborative Tool for Annotating Audio-Visual Data </p>
+                                <!-- <p class="mb-2"><b>Event:</b> <a href="https://lucyinstitute.nd.edu">Lucy institute Fall Symposum 2022, University of Notre Dame</a></p> -->
+                                <p class="mb-2"><b>Abstract:</b> Annotating audio-visual
+                                    datasets is laborious, expensive, and time-consuming. To address this challenge, we designed and developed an efficient audio-visual
+                                    annotation tool called Peanut to accelerate the audio-visual data annotation process while maintaining high annotation accuracy. </p>
+                            </div>
                         </div>
-                        <div class="col-md-4 portfolio-item image">
-                            <a href="images/portfolio/05.jpg" class="img-zoom">
-                                <div class="portfolio-box">
-                                    <div class="portfolio-img"> <img src="images/portfolio/05.jpg" class="img-fluid mx-auto d-block" alt=""> </div>
-                                    <div class="portfolio-detail">
-                                        <h4 class="mb-0">Kinfolk Magazine</h4>
-                                        <p class="mb-3">Image</p>
+                    </div>
+                </div>
+            </section>
+            <div class="divider1"></div>
+            <section class="section-padding animate-box" data-animate-effect="fadeInUp">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="gallery-item">
+                                <a href="images/portfolio/lucyinstitute_nlq.jpg" title="" class="img-zoom">
+                                    <div class="gallery-box">
+                                        <div class="gallery-img"> <img src="images/portfolio/lucyinstitute_nlq.jpg" class="img-fluid mx-auto d-block" alt=""> </div>
                                     </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                         </div>
-                        <div class="col-md-4 portfolio-item grid-of-images image">
-                            <a href="images/portfolio/01.jpg" class="image-popup-vertical-fit img-zoom" title="House at Khlebny">
-                                <div class="portfolio-box">
-                                    <div class="portfolio-img"> <img src="images/portfolio/01.jpg" class="img-fluid mx-auto d-block" alt=""> </div>
-                                    <div class="portfolio-detail">
-                                        <h4 class="mb-0">House at Khlebny</h4>
-                                        <p class="mb-3">Image</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-4 portfolio-item image">
-                            <a href="images/portfolio/03.jpg" class="img-zoom" title="El Chocolate">
-                                <div class="portfolio-box">
-                                    <div class="portfolio-img"> <img src="images/portfolio/03.jpg" class="img-fluid mx-auto d-block" alt=""> </div>
-                                    <div class="portfolio-detail">
-                                        <h4 class="mb-0">El Chocolate</h4>
-                                        <p class="mb-3">Image</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-4 portfolio-item detail">
-                            <a href="portfolio-page.html">
-                                <div class="portfolio-box">
-                                    <div class="portfolio-img"> <img src="images/portfolio/08.jpg" class="img-fluid mx-auto d-block" alt=""> </div>
-                                    <div class="portfolio-detail">
-                                        <h4 class="mb-0">Cuyana Magazine</h4>
-                                        <p class="mb-3">Detail Page</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-4 portfolio-item image">
-                            <a href="images/portfolio/06.jpg" class="img-zoom" title="Neue Werkstatt">
-                                <div class="portfolio-box">
-                                    <div class="portfolio-img"> <img src="images/portfolio/06.jpg" class="img-fluid mx-auto d-block" alt=""> </div>
-                                    <div class="portfolio-detail">
-                                        <h4 class="mb-0">Neue Werkstatt</h4>
-                                        <p class="mb-3">Image</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-4 portfolio-item image">
-                            <a href="images/portfolio/07.jpg" class="img-zoom" title="Tomongkol">
-                                <div class="portfolio-box">
-                                    <div class="portfolio-img"> <img src="images/portfolio/07.jpg" class="img-fluid mx-auto d-block" alt=""> </div>
-                                    <div class="portfolio-detail">
-                                        <h4 class="mb-0">Taweesak Tomongkol</h4>
-                                        <p class="mb-3">Image</p>
-                                    </div>
-                                </div>
-                            </a>
+                        <div class="col-md-5">
+                            <div class="project-desc mt-5">
+                                <p class="mb-2"><b>Topic:</b>An Empirical Study on Model Errors and Users’ Error Repair Strategies in Natural Language Interfaces for Database Queries</p>
+                                <!-- <p class="mb-2"><b>Event:</b> <a href="https://lucyinstitute.nd.edu">Lucy institute Fall Symposum 2022, University of Notre Dame</a></p> -->
+                                <p class="mb-2"><b>Abstract:</b> Recent advances in machine learning (ML) and natural language processing (NLP) have led to significant improvement in natural
+                                    language interfaces for structured databases (NL2SQL). Despite the great strides, the overall accuracy of NL2SQL models is still far from
+                                    being perfect. In this study, we analyzed the errors made by recent SOTA NL2SQL models and investigate the effectiveness of three interactive error-handling mechanisms.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
