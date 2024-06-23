@@ -20,7 +20,7 @@ body {
 
 .teaser .hero-body {
   padding-top: 0;
-  padding-bottom: 3rem;
+  padding-bottom: 5rem;
 }
 
 .teaser {
@@ -115,10 +115,11 @@ body {
 }
 
 .results-carousel .item {
-  margin: 5px;
+  margin: auto;
   overflow: hidden;
   padding: 20px;
   font-size: 0;
+  width: 80%;
 }
 
 .results-carousel video {
