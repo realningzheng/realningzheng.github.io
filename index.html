@@ -155,7 +155,20 @@
             </section>
             <div class="divider1"></div>
 
-            <section class="section-padding animate-box" data-animate-effect="fadeInUp">
+            <section class="section-padding animate-box" data-animate-effect="fadeInUp" style="height: 50vh; overflow: hidden; position: relative; transition: height 0.3s ease;">
+                <button onclick="toggleSection(this)" style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); background: #fff; border: 1px solid #ddd; padding: 5px 15px; cursor: pointer;">Show More</button>
+                <script>
+                    function toggleSection(btn) {
+                        const section = btn.parentElement;
+                        if (section.style.height === '50vh') {
+                            section.style.height = 'auto';
+                            btn.textContent = 'Show Less';
+                        } else {
+                            section.style.height = '50vh';
+                            btn.textContent = 'Show More';
+                        }
+                    }
+                </script>
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
