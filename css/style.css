@@ -3082,3 +3082,159 @@ ul.social-network li {
 .progress-wrap svg.progress-circle path {
     stroke: #000;
 }
+
+/* ======= Theme: Panorama ======= */
+:root {
+    --panorama-bg: #f6f3ef;
+    --panorama-panel: #ffffff;
+    --panorama-ink: #1d1b1a;
+    --panorama-muted: #5f5853;
+    --panorama-accent: #2f6b5f;
+    --panorama-line: rgba(47, 107, 95, 0.2);
+}
+
+body {
+    font-family: 'Urbanist', sans-serif;
+    color: var(--panorama-muted);
+    background: radial-gradient(circle at top, #fdf8f3 0%, var(--panorama-bg) 55%, #ede6df 100%);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+strong {
+    font-family: 'Bodoni Moda', serif;
+    color: var(--panorama-ink);
+    letter-spacing: 0.01em;
+}
+
+p {
+    font-family: 'Urbanist', sans-serif;
+    color: var(--panorama-muted);
+}
+
+a {
+    color: var(--panorama-accent);
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: var(--panorama-ink);
+}
+
+#lonon-aside {
+    background: var(--panorama-panel);
+    border-right: 1px solid #e6ddd6;
+    box-shadow: 0 18px 36px rgba(29, 27, 26, 0.08);
+}
+
+.hero-panorama {
+    padding-top: 120px;
+    padding-bottom: 70px;
+}
+
+.panorama-header {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.panorama-kicker {
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    font-size: 12px;
+    color: #867a71;
+    margin-bottom: 12px;
+}
+
+.panorama-lede {
+    font-size: 18px;
+    max-width: 620px;
+}
+
+.panorama-actions {
+    margin-top: 22px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.panorama-btn {
+    border-radius: 12px;
+    border-color: var(--panorama-ink);
+    color: var(--panorama-ink);
+    padding: 10px 20px;
+}
+
+.panorama-btn:hover {
+    background: var(--panorama-ink);
+    color: #fff;
+}
+
+.panorama-btn-outline {
+    border-color: var(--panorama-accent);
+    color: var(--panorama-accent);
+}
+
+.panorama-btn-outline:hover {
+    background: var(--panorama-accent);
+    color: #fff;
+    border-color: var(--panorama-accent);
+}
+
+.panorama-strip {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+}
+
+.panorama-card {
+    background: var(--panorama-panel);
+    border: 1px solid #e7dfd7;
+    border-radius: 18px;
+    padding: 20px;
+    box-shadow: 0 16px 32px rgba(29, 27, 26, 0.1);
+}
+
+.panorama-subhead {
+    margin-bottom: 12px;
+}
+
+.panorama-list {
+    display: grid;
+    gap: 14px;
+}
+
+.panorama-list span {
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 11px;
+    color: #8a7b71;
+}
+
+.section-title {
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-size: 19px;
+}
+
+.section-padding::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--panorama-accent), transparent);
+    opacity: 0.35;
+}
+
+@media (max-width: 767px) {
+    .panorama-lede {
+        font-size: 17px;
+    }
+}
