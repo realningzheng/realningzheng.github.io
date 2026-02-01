@@ -3082,3 +3082,186 @@ ul.social-network li {
 .progress-wrap svg.progress-circle path {
     stroke: #000;
 }
+
+/* ======= Theme: Atelier ======= */
+:root {
+    --atelier-bg: #f7f3ee;
+    --atelier-panel: #ffffff;
+    --atelier-ink: #1f1a17;
+    --atelier-muted: #5f5750;
+    --atelier-accent: #d9643a;
+    --atelier-accent-soft: #f7e1d7;
+}
+
+body {
+    font-family: 'Epilogue', sans-serif;
+    color: var(--atelier-muted);
+    background: radial-gradient(circle at top left, #fdf6f2 0%, var(--atelier-bg) 55%, #efe6df 100%);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+strong {
+    font-family: 'Libre Baskerville', serif;
+    color: var(--atelier-ink);
+    letter-spacing: 0.01em;
+}
+
+p {
+    font-family: 'Epilogue', sans-serif;
+    color: var(--atelier-muted);
+}
+
+a {
+    color: var(--atelier-accent);
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: var(--atelier-ink);
+}
+
+#lonon-page {
+    position: relative;
+}
+
+#lonon-page::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 10% 15%, #f7e7dc 0%, transparent 45%),
+        radial-gradient(circle at 85% 5%, #efe0d5 0%, transparent 50%);
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+#lonon-aside {
+    background: rgba(255, 255, 255, 0.95);
+    border-right: 1px solid #eaded6;
+    box-shadow: 0 16px 30px rgba(31, 26, 23, 0.08);
+}
+
+#lonon-main {
+    background: transparent;
+}
+
+.hero-atelier {
+    padding-top: 120px;
+    padding-bottom: 80px;
+}
+
+.hero-eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.35em;
+    font-size: 12px;
+    color: #8c6f61;
+    margin-bottom: 18px;
+}
+
+.hero-title {
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+.hero-lede {
+    font-size: 18px;
+    max-width: 520px;
+}
+
+.hero-actions {
+    margin-top: 28px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.hero-btn {
+    border-color: var(--atelier-ink);
+    color: var(--atelier-ink);
+    border-radius: 12px;
+    padding: 12px 22px;
+}
+
+.hero-btn:hover {
+    background-color: var(--atelier-ink);
+    color: #fff;
+}
+
+.hero-btn-outline {
+    background: transparent;
+    border-color: var(--atelier-accent);
+    color: var(--atelier-accent);
+}
+
+.hero-btn-outline:hover {
+    background-color: var(--atelier-accent);
+    color: #fff;
+    border-color: var(--atelier-accent);
+}
+
+.hero-card {
+    background: var(--atelier-panel);
+    border: 1px solid #f0e4dc;
+    box-shadow: 0 20px 40px rgba(31, 26, 23, 0.12);
+    padding: 28px;
+    border-radius: 20px;
+}
+
+.hero-card-title {
+    font-size: 14px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #9a7b6a;
+    margin-bottom: 12px;
+}
+
+.hero-card-text {
+    font-size: 16px;
+}
+
+.hero-tags {
+    margin-top: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.hero-tags span {
+    display: inline-flex;
+    padding: 6px 12px;
+    border-radius: 999px;
+    background: var(--atelier-accent-soft);
+    color: var(--atelier-ink);
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.section-title {
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.section-padding::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--atelier-accent), transparent);
+    opacity: 0.35;
+}
+
+@media (max-width: 767px) {
+    .hero-title {
+        font-size: 38px;
+    }
+}
