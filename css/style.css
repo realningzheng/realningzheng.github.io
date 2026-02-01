@@ -3082,3 +3082,134 @@ ul.social-network li {
 .progress-wrap svg.progress-circle path {
     stroke: #000;
 }
+
+/* ======= Theme: Aurora ======= */
+:root {
+    --aurora-bg: #f5f7fb;
+    --aurora-panel: #ffffff;
+    --aurora-ink: #0d1b2a;
+    --aurora-muted: #4b5563;
+    --aurora-accent: #2a9d8f;
+    --aurora-accent-soft: #e9f5f2;
+}
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    color: var(--aurora-muted);
+    background: radial-gradient(circle at top, #eef4ff 0%, var(--aurora-bg) 60%, #fef6ef 100%);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+strong {
+    font-family: 'Cormorant Garamond', serif;
+    color: var(--aurora-ink);
+    letter-spacing: 0.02em;
+}
+
+p {
+    font-family: 'Space Grotesk', sans-serif;
+    color: var(--aurora-muted);
+}
+
+a {
+    color: var(--aurora-accent);
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: var(--aurora-ink);
+}
+
+#lonon-page {
+    position: relative;
+}
+
+#lonon-page::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 15% 20%, #e6f6f1 0%, transparent 40%),
+        radial-gradient(circle at 85% 10%, #f9f1dd 0%, transparent 45%);
+    opacity: 0.55;
+    pointer-events: none;
+}
+
+#lonon-aside {
+    background: rgba(255, 255, 255, 0.92);
+    border-right: 1px solid #e6e8ee;
+    box-shadow: 0 12px 32px rgba(12, 24, 39, 0.08);
+    backdrop-filter: blur(8px);
+}
+
+#lonon-main {
+    background: transparent;
+    animation: auroraFade 0.7s ease both;
+}
+
+.section-title {
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.section-padding {
+    position: relative;
+}
+
+.section-padding::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--aurora-accent), transparent);
+    opacity: 0.4;
+}
+
+.progress-wrap {
+    background: var(--aurora-panel);
+    box-shadow: 0 12px 24px rgba(12, 24, 39, 0.08);
+}
+
+.btn,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+    border-color: var(--aurora-ink);
+    color: var(--aurora-ink);
+}
+
+.btn:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover {
+    background-color: var(--aurora-ink);
+    color: #ffffff;
+}
+
+@keyframes auroraFade {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #lonon-main {
+        animation: none;
+    }
+}
