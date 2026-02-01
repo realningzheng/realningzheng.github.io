@@ -3082,3 +3082,157 @@ ul.social-network li {
 .progress-wrap svg.progress-circle path {
     stroke: #000;
 }
+
+/* ======= Theme: Signal ======= */
+:root {
+    --signal-bg: #f7f8fb;
+    --signal-panel: #ffffff;
+    --signal-ink: #101828;
+    --signal-muted: #4b5563;
+    --signal-accent: #2563eb;
+    --signal-soft: #e0ebff;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: var(--signal-muted);
+    background: linear-gradient(135deg, #f7f8fb 0%, #eef3ff 45%, #f8f2ec 100%);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+strong {
+    font-family: 'Prata', serif;
+    color: var(--signal-ink);
+    letter-spacing: 0.01em;
+}
+
+p {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: var(--signal-muted);
+}
+
+a {
+    color: var(--signal-accent);
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: var(--signal-ink);
+}
+
+#lonon-aside {
+    background: var(--signal-panel);
+    border-right: 1px solid #e5e7eb;
+    box-shadow: 0 16px 32px rgba(16, 24, 40, 0.08);
+}
+
+.hero-signal {
+    padding-top: 120px;
+    padding-bottom: 70px;
+}
+
+.signal-eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.28em;
+    font-size: 12px;
+    color: #6b7280;
+    margin-bottom: 18px;
+}
+
+.signal-title {
+    font-size: 52px;
+    margin-bottom: 16px;
+}
+
+.signal-lede {
+    font-size: 18px;
+    max-width: 520px;
+}
+
+.signal-actions {
+    margin-top: 24px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.signal-btn {
+    border-radius: 999px;
+    padding: 10px 22px;
+    border-color: var(--signal-ink);
+    color: var(--signal-ink);
+}
+
+.signal-btn:hover {
+    background: var(--signal-ink);
+    color: #fff;
+}
+
+.signal-btn-dark {
+    background: var(--signal-ink);
+    color: #fff;
+}
+
+.signal-btn-dark:hover {
+    background: #0b1220;
+}
+
+.signal-stack {
+    display: grid;
+    gap: 16px;
+}
+
+.signal-card {
+    background: var(--signal-panel);
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+    padding: 22px;
+    box-shadow: 0 18px 36px rgba(16, 24, 40, 0.1);
+}
+
+.signal-card h4 {
+    margin-bottom: 10px;
+}
+
+.signal-info {
+    display: grid;
+    gap: 20px;
+}
+
+.signal-info-card {
+    background: var(--signal-panel);
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 12px 24px rgba(16, 24, 40, 0.08);
+}
+
+.section-title {
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-size: 19px;
+}
+
+.section-padding::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--signal-accent), transparent);
+    opacity: 0.35;
+}
+
+@media (max-width: 767px) {
+    .signal-title {
+        font-size: 40px;
+    }
+}
