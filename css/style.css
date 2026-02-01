@@ -3128,7 +3128,7 @@ h5,
 h6,
 b,
 strong {
-    font-family: 'Instrument Serif', serif;
+    font-family: 'Carlito', 'Arial', sans-serif;
     color: var(--orbit-ink);
     letter-spacing: 0.01em;
 }
@@ -3307,12 +3307,37 @@ html[data-theme="dark"] .theme-icon--sun {
     align-items: center;
 }
 
-.orbit-kicker {
-    text-transform: uppercase;
-    letter-spacing: 0.28em;
-    font-size: 12px;
-    color: #7a8a9f;
-    margin-bottom: 12px;
+.orbit-hero-text {
+    max-width: 620px;
+}
+
+.orbit-lede-row {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 18px;
+    align-items: start;
+}
+
+.orbit-lede-row p {
+    margin-bottom: 0;
+}
+
+.orbit-lede-avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--orbit-border);
+    background: #f8fafc;
+    flex: 0 0 auto;
+    align-self: start;
+}
+
+.orbit-lede-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .orbit-hero h1 {
@@ -3325,6 +3350,43 @@ html[data-theme="dark"] .theme-icon--sun {
     gap: 12px;
     flex-wrap: wrap;
     margin-top: 22px;
+}
+
+.orbit-hero-text--avatar .orbit-hero-actions {
+    margin-left: 60px;
+}
+
+.orbit-hero-social {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.orbit-hero-text--avatar .orbit-hero-social {
+    margin-left: 60px;
+}
+
+.orbit-social {
+    width: 40px;
+    height: 40px;
+    border-radius: 14px;
+    border: 1px solid var(--orbit-border);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--orbit-ink);
+    background: var(--orbit-panel);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.orbit-social i {
+    font-size: 18px;
+}
+
+.orbit-social:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 18px rgba(15, 23, 42, 0.12);
 }
 
 .orbit-hero-cards {
@@ -3514,35 +3576,17 @@ html[data-accessibility="on"] .orbit-links {
     .orbit-hero h1 {
         font-size: 38px;
     }
-}
-.orbit-section-header-with-portrait {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.orbit-portrait-inline {
-    width: 72px;
-    height: 72px;
-    border-radius: 50%;
-    overflow: hidden;
-    background: #f8fafc;
-    border: 1px solid var(--orbit-border);
-}
-
-.orbit-portrait-inline img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    filter: grayscale(100%) contrast(0.9);
-    opacity: 0.85;
-}
-
-@media (max-width: 767px) {
-    .orbit-section-header-with-portrait {
-        flex-direction: column;
+    .orbit-lede-row {
+        grid-template-columns: 1fr;
         align-items: flex-start;
+    }
+    .orbit-lede-avatar {
+        order: -1;
+    }
+    .orbit-hero-text--avatar .orbit-hero-actions {
+        margin-left: 0;
+    }
+    .orbit-hero-text--avatar .orbit-hero-social {
+        margin-left: 0;
     }
 }
