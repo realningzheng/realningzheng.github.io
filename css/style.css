@@ -3083,20 +3083,20 @@ ul.social-network li {
     stroke: #000;
 }
 
-/* ======= Theme: Aurora ======= */
+/* ======= Theme: Terracotta ======= */
 :root {
-    --aurora-bg: #f5f7fb;
-    --aurora-panel: #ffffff;
-    --aurora-ink: #0d1b2a;
-    --aurora-muted: #4b5563;
-    --aurora-accent: #2a9d8f;
-    --aurora-accent-soft: #e9f5f2;
+    --terra-bg: #f7f1ea;
+    --terra-panel: #fffaf4;
+    --terra-ink: #2b1f1a;
+    --terra-muted: #5c4a3d;
+    --terra-accent: #c45d3f;
+    --terra-accent-soft: #f3dfd4;
 }
 
 body {
-    font-family: 'Space Grotesk', sans-serif;
-    color: var(--aurora-muted);
-    background: radial-gradient(circle at top, #eef4ff 0%, var(--aurora-bg) 60%, #fef6ef 100%);
+    font-family: 'Work Sans', sans-serif;
+    color: var(--terra-muted);
+    background: linear-gradient(135deg, #f7f1ea 0%, #fdf7f2 50%, #f3e6dc 100%);
 }
 
 h1,
@@ -3107,24 +3107,24 @@ h5,
 h6,
 b,
 strong {
-    font-family: 'Cormorant Garamond', serif;
-    color: var(--aurora-ink);
-    letter-spacing: 0.02em;
+    font-family: 'Literata', serif;
+    color: var(--terra-ink);
+    letter-spacing: 0.01em;
 }
 
 p {
-    font-family: 'Space Grotesk', sans-serif;
-    color: var(--aurora-muted);
+    font-family: 'Work Sans', sans-serif;
+    color: var(--terra-muted);
 }
 
 a {
-    color: var(--aurora-accent);
+    color: var(--terra-accent);
 }
 
 a:hover,
 a:active,
 a:focus {
-    color: var(--aurora-ink);
+    color: var(--terra-ink);
 }
 
 #lonon-page {
@@ -3135,26 +3135,25 @@ a:focus {
     content: "";
     position: absolute;
     inset: 0;
-    background: radial-gradient(circle at 15% 20%, #e6f6f1 0%, transparent 40%),
-        radial-gradient(circle at 85% 10%, #f9f1dd 0%, transparent 45%);
-    opacity: 0.55;
+    background: radial-gradient(circle at 10% 15%, #f7e2d5 0%, transparent 40%),
+        radial-gradient(circle at 85% 5%, #efe2d4 0%, transparent 45%);
+    opacity: 0.7;
     pointer-events: none;
 }
 
 #lonon-aside {
-    background: rgba(255, 255, 255, 0.92);
-    border-right: 1px solid #e6e8ee;
-    box-shadow: 0 12px 32px rgba(12, 24, 39, 0.08);
-    backdrop-filter: blur(8px);
+    background: var(--terra-panel);
+    border-right: 1px solid #ead9cd;
+    box-shadow: 0 16px 30px rgba(60, 38, 28, 0.08);
 }
 
 #lonon-main {
     background: transparent;
-    animation: auroraFade 0.7s ease both;
+    animation: terraLift 0.7s ease both;
 }
 
 .section-title {
-    letter-spacing: 0.16em;
+    letter-spacing: 0.14em;
     text-transform: uppercase;
     font-size: 20px;
 }
@@ -3170,13 +3169,13 @@ a:focus {
     right: 0;
     top: 0;
     height: 1px;
-    background: linear-gradient(90deg, transparent, var(--aurora-accent), transparent);
-    opacity: 0.4;
+    background: linear-gradient(90deg, transparent, var(--terra-accent), transparent);
+    opacity: 0.35;
 }
 
 .progress-wrap {
-    background: var(--aurora-panel);
-    box-shadow: 0 12px 24px rgba(12, 24, 39, 0.08);
+    background: var(--terra-panel);
+    box-shadow: 0 14px 26px rgba(60, 38, 28, 0.12);
 }
 
 .btn,
@@ -3184,8 +3183,8 @@ button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
-    border-color: var(--aurora-ink);
-    color: var(--aurora-ink);
+    border-color: var(--terra-ink);
+    color: var(--terra-ink);
 }
 
 .btn:hover,
@@ -3193,14 +3192,14 @@ button:hover,
 input[type="submit"]:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover {
-    background-color: var(--aurora-ink);
+    background-color: var(--terra-ink);
     color: #ffffff;
 }
 
-@keyframes auroraFade {
+@keyframes terraLift {
     from {
         opacity: 0;
-        transform: translateY(18px);
+        transform: translateY(20px);
     }
     to {
         opacity: 1;
