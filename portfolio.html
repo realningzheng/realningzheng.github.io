@@ -17,7 +17,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="images/nd.png" />
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap">
+        href="https://fonts.googleapis.com/css2?family=Carlito:wght@400;700&family=Instrument+Serif:ital@0;1&display=swap">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/et-lineicons.css">
     <link rel="stylesheet" href="css/themify-icons.css">
@@ -34,6 +34,29 @@
 </head>
 
 <body>
+    <a class="skip-link" href="#lonon-main">Skip to main content</a>
+    <p class="sr-only" id="sr-summary">
+        Portfolio page of Ning Zheng, Applied Scientist II at Amazon. Includes selected research projects and publications.
+    </p>
+    <header class="orbit-nav">
+        <div class="orbit-brand">
+            <span class="orbit-dot"></span>
+            <span>Ning Zheng</span>
+        </div>
+        <nav class="orbit-links" aria-label="Primary">
+            <a href="index.html#about">About</a>
+            <a href="index.html#research">Research</a>
+            <a href="index.html#news">News</a>
+            <a href="index.html#publications">Publications</a>
+            <a href="portfolio.html">Portfolio</a>
+        </nav>
+        <div class="orbit-cta" aria-label="Quick actions">
+            <a class="orbit-btn" href="resources/CV_Zheng_Ning.pdf">CV</a>
+            <a class="orbit-btn orbit-btn-outline" href="mailto:zning@nd.edu">Email</a>
+            <button class="orbit-btn orbit-btn-outline orbit-theme-toggle" id="theme-toggle" type="button" aria-pressed="false">Night</button>
+        </div>
+    </header>
+    <span class="sr-only" id="theme-status" aria-live="polite"></span>
     <!-- Progress scroll totop -->
     <div class="progress-wrap cursor-pointer">
         <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
@@ -85,7 +108,7 @@
             </div>
         </aside>
         <!-- Main Section -->
-        <div id="lonon-main">
+        <div id="lonon-main" role="main">
             <!-- Portfolio -->
             <section class="section-padding animate-box" data-animate-effect="fadeInUp">
                 <div class="container">
@@ -218,6 +241,7 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/YouTubePopUp.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/orbit-theme.js"></script>
 </body>
 
 </html>

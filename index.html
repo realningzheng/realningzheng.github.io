@@ -17,7 +17,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="images/nd.png" />
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap">
+        href="https://fonts.googleapis.com/css2?family=Carlito:wght@400;700&family=Instrument+Serif:ital@0;1&display=swap">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/et-lineicons.css">
     <link rel="stylesheet" href="css/themify-icons.css">
@@ -34,23 +34,29 @@
 </head>
 
 <body>
+    <a class="skip-link" href="#lonon-main">Skip to main content</a>
+    <p class="sr-only" id="sr-summary">
+        Personal website of Ning Zheng, Applied Scientist II at Amazon. Includes research focus, projects, news, and publications.
+    </p>
     <header class="orbit-nav">
         <div class="orbit-brand">
             <span class="orbit-dot"></span>
             <span>Ning Zheng</span>
         </div>
-        <nav class="orbit-links">
+        <nav class="orbit-links" aria-label="Primary">
             <a href="#about">About</a>
             <a href="#research">Research</a>
             <a href="#news">News</a>
             <a href="#publications">Publications</a>
             <a href="portfolio.html">Portfolio</a>
         </nav>
-        <div class="orbit-cta">
+        <div class="orbit-cta" aria-label="Quick actions">
             <a class="orbit-btn" href="resources/CV_Zheng_Ning.pdf">CV</a>
             <a class="orbit-btn orbit-btn-outline" href="mailto:zning@nd.edu">Email</a>
+            <button class="orbit-btn orbit-btn-outline orbit-theme-toggle" id="theme-toggle" type="button" aria-pressed="false">Night</button>
         </div>
     </header>
+    <span class="sr-only" id="theme-status" aria-live="polite"></span>
 
     <!-- Progress scroll totop -->
     <div class="progress-wrap cursor-pointer">
@@ -106,7 +112,7 @@
             </div>
         </aside>
         <!-- Main Section -->
-                <div id="lonon-main">
+        <div id="lonon-main" role="main">
             <section class="orbit-hero" id="top">
                 <div class="container">
                     <div class="orbit-hero-grid">
@@ -153,9 +159,14 @@
             <!-- About -->
                         <section id="about" class="orbit-section">
                 <div class="container">
-                    <div class="orbit-section-header">
-                        <h2>About</h2>
-                        <p>Applied scientist with a background in HCI and multimodal AI.</p>
+                    <div class="orbit-section-header orbit-section-header-with-portrait">
+                        <div>
+                            <h2>About</h2>
+                            <p>Applied scientist with a background in HCI and multimodal AI.</p>
+                        </div>
+                        <div class="orbit-portrait-inline">
+                            <img src="images/me.png" alt="Portrait of Ning Zheng">
+                        </div>
                     </div>
                     <div class="orbit-split">
                         <div class="orbit-panel">
@@ -929,6 +940,7 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/YouTubePopUp.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/orbit-theme.js"></script>
 </body>
 
 </html>
