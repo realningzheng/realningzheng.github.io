@@ -3083,20 +3083,20 @@ ul.social-network li {
     stroke: #000;
 }
 
-/* ======= Theme: Graphite ======= */
+/* ======= Theme: Ocean ======= */
 :root {
-    --graphite-bg: #f4f4f6;
-    --graphite-panel: #ffffff;
-    --graphite-ink: #111317;
-    --graphite-muted: #4b4f55;
-    --graphite-accent: #b9382e;
-    --graphite-line: #d6d9de;
+    --ocean-bg: #e9f2f6;
+    --ocean-panel: #ffffff;
+    --ocean-ink: #0b1f2a;
+    --ocean-muted: #405865;
+    --ocean-accent: #1f6f8b;
+    --ocean-accent-soft: #d6eef5;
 }
 
 body {
-    font-family: 'IBM Plex Sans', sans-serif;
-    color: var(--graphite-muted);
-    background: linear-gradient(160deg, #f7f7f9 0%, var(--graphite-bg) 60%, #eef0f4 100%);
+    font-family: 'Manrope', sans-serif;
+    color: var(--ocean-muted);
+    background: radial-gradient(circle at top, #f4fbff 0%, var(--ocean-bg) 55%, #deedf5 100%);
 }
 
 h1,
@@ -3107,24 +3107,24 @@ h5,
 h6,
 b,
 strong {
-    font-family: 'IBM Plex Serif', serif;
-    color: var(--graphite-ink);
-    letter-spacing: 0.01em;
+    font-family: 'DM Serif Display', serif;
+    color: var(--ocean-ink);
+    letter-spacing: 0.015em;
 }
 
 p {
-    font-family: 'IBM Plex Sans', sans-serif;
-    color: var(--graphite-muted);
+    font-family: 'Manrope', sans-serif;
+    color: var(--ocean-muted);
 }
 
 a {
-    color: var(--graphite-accent);
+    color: var(--ocean-accent);
 }
 
 a:hover,
 a:active,
 a:focus {
-    color: var(--graphite-ink);
+    color: var(--ocean-ink);
 }
 
 #lonon-page {
@@ -3135,30 +3135,25 @@ a:focus {
     content: "";
     position: absolute;
     inset: 0;
-    background: repeating-linear-gradient(
-        90deg,
-        rgba(17, 19, 23, 0.04) 0,
-        rgba(17, 19, 23, 0.04) 1px,
-        transparent 1px,
-        transparent 120px
-    );
-    opacity: 0.25;
+    background: radial-gradient(circle at 15% 15%, #dff2f9 0%, transparent 45%),
+        radial-gradient(circle at 80% 5%, #e4f0f7 0%, transparent 50%);
+    opacity: 0.7;
     pointer-events: none;
 }
 
 #lonon-aside {
-    background: var(--graphite-panel);
-    border-right: 1px solid var(--graphite-line);
-    box-shadow: 0 10px 24px rgba(17, 19, 23, 0.08);
+    background: var(--ocean-panel);
+    border-right: 1px solid #d7e3ea;
+    box-shadow: 0 14px 30px rgba(11, 31, 42, 0.08);
 }
 
 #lonon-main {
     background: transparent;
-    animation: graphiteRise 0.7s ease both;
+    animation: oceanSweep 0.75s ease both;
 }
 
 .section-title {
-    letter-spacing: 0.2em;
+    letter-spacing: 0.18em;
     text-transform: uppercase;
     font-size: 19px;
 }
@@ -3174,13 +3169,13 @@ a:focus {
     right: 0;
     top: 0;
     height: 1px;
-    background: linear-gradient(90deg, transparent, var(--graphite-accent), transparent);
+    background: linear-gradient(90deg, transparent, var(--ocean-accent), transparent);
     opacity: 0.35;
 }
 
 .progress-wrap {
-    background: var(--graphite-panel);
-    box-shadow: 0 14px 30px rgba(17, 19, 23, 0.12);
+    background: var(--ocean-panel);
+    box-shadow: 0 14px 28px rgba(11, 31, 42, 0.12);
 }
 
 .btn,
@@ -3188,8 +3183,8 @@ button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
-    border-color: var(--graphite-ink);
-    color: var(--graphite-ink);
+    border-color: var(--ocean-ink);
+    color: var(--ocean-ink);
 }
 
 .btn:hover,
@@ -3197,14 +3192,14 @@ button:hover,
 input[type="submit"]:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover {
-    background-color: var(--graphite-ink);
+    background-color: var(--ocean-ink);
     color: #ffffff;
 }
 
-@keyframes graphiteRise {
+@keyframes oceanSweep {
     from {
         opacity: 0;
-        transform: translateY(18px);
+        transform: translateY(16px);
     }
     to {
         opacity: 1;
