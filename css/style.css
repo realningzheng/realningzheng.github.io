@@ -3202,6 +3202,34 @@ html[data-theme="dark"] .orbit-nav {
     border: 0;
 }
 
+.orbit-icon-btn {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+}
+
+.orbit-icon-btn svg {
+    width: 18px;
+    height: 18px;
+    display: block;
+}
+
+.theme-icon--sun {
+    display: none;
+}
+
+html[data-theme="dark"] .theme-icon--moon {
+    display: none;
+}
+
+html[data-theme="dark"] .theme-icon--sun {
+    display: inline-flex;
+}
+
 .orbit-brand {
     display: flex;
     align-items: center;
@@ -3331,6 +3359,71 @@ html[data-theme="dark"] .orbit-nav {
 
 .orbit-section-alt {
     background: var(--orbit-section-alt);
+}
+
+.a11y-panel {
+    display: none;
+    background: var(--orbit-panel);
+    border: 1px solid var(--orbit-border);
+    border-radius: 18px;
+    padding: 20px;
+    margin: 28px 6vw 0;
+    box-shadow: none;
+}
+
+.a11y-panel h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.a11y-panel ul {
+    list-style: disc;
+    padding-left: 18px;
+    margin: 10px 0 0;
+}
+
+html[data-accessibility="on"] .a11y-panel {
+    display: block;
+}
+
+html[data-accessibility="on"] body {
+    background: var(--orbit-panel);
+}
+
+html[data-accessibility="on"] .orbit-hero,
+html[data-accessibility="on"] .orbit-section {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+html[data-accessibility="on"] .orbit-card,
+html[data-accessibility="on"] .orbit-panel,
+html[data-accessibility="on"] .orbit-tile {
+    box-shadow: none;
+    border-width: 2px;
+}
+
+html[data-accessibility="on"] p,
+html[data-accessibility="on"] li {
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+html[data-accessibility="on"] h1,
+html[data-accessibility="on"] h2,
+html[data-accessibility="on"] h3 {
+    letter-spacing: 0.02em;
+}
+
+html[data-accessibility="on"] a {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+html[data-accessibility="on"] .orbit-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
 }
 
 .orbit-section-header {
