@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/bot",
+      "destination": "https://ning-bot.vercel.app/bot"
+    },
+    {
+      "source": "/bot/(.*)",
+      "destination": "https://ning-bot.vercel.app/bot/$1"
+    }
+  ]
+}
