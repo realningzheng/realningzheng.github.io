@@ -317,6 +317,7 @@
         }
     });
     
+    
     // Magnific Popup
     $(".img-zoom").magnificPopup({
     type: "image"

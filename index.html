@@ -40,19 +40,19 @@
     </p>
     <header class="orbit-nav">
         <div class="orbit-brand">
-            <a class="orbit-bot" href="#" aria-label="Ning's bot (coming soon)">
-                <span class="orbit-bot-ascii" aria-hidden="true">[:: Ning's Bot ::] </span>
+            <a class="orbit-bot" href="#" aria-label="Ning's bot">
+                <span class="orbit-bot-ascii" aria-hidden="true">[:: My Bot ::] </span>
             </a>
         </div>
         <nav class="orbit-links" aria-label="Primary">
             <a href="#about">About</a>
             <a href="#research">Research</a>
-            <a href="#news">News</a>
+            <!-- <a href="#news">News</a> -->
             <a href="#publications">Publications</a>
+            <a href="resources/CV_Zheng_Ning.pdf">CV</a>
         </nav>
         <div class="orbit-cta" aria-label="Quick actions">
-            <a class="orbit-btn" href="resources/CV_Zheng_Ning.pdf">CV</a>
-            <a class="orbit-btn orbit-btn-outline" href="mailto:zning@nd.edu">Email</a>
+            <!-- <a class="orbit-btn orbit-btn-outline" href="mailto:zning@nd.edu">Email</a> -->
             <button class="orbit-btn orbit-btn-outline orbit-icon-btn orbit-theme-toggle" id="theme-toggle" type="button" aria-pressed="false" aria-label="Toggle day and night mode">
                 <span class="theme-icon theme-icon--moon" aria-hidden="true">
                     <svg viewBox="0 0 24 24" role="img" aria-hidden="true"><path d="M21 14.5a8.5 8.5 0 0 1-11.5-11.5 9 9 0 1 0 11.5 11.5Z" fill="currentColor"/></svg>
@@ -117,8 +117,8 @@
                     <li> <a href="mailto:zning@nd.edu"><i class="ti-email gray-icon" icon-color></i></a></li>
                     <li><a href="https://twitter.com/realningzheng"><i class="ti-twitter-alt gray-icon"></i></a></li>
                     <li><a href="https://www.linkedin.com/in/realningzheng"><i class="ti-linkedin gray-icon"></i></a>
-                    </li>
-                    <li><a href="https://www.instagram.com/_zzzning/"><i class="ti-instagram gray-icon"></i></a></li>
+                    <!-- </li> -->
+                    <!-- <li><a href="https://www.instagram.com/_zzzning/"><i class="ti-instagram gray-icon"></i></a></li> -->
                 </ul>
                 <p><small>&copy; Ning Zheng <a href="#">Last updated: Feb 2026</a></small></p>
             </div>
@@ -131,7 +131,7 @@
                 <ul>
                     <li><a href="#about">Jump to About</a></li>
                     <li><a href="#research">Jump to Research Systems</a></li>
-                    <li><a href="#news">Jump to News</a></li>
+                    <!-- <li><a href="#news">Jump to News</a></li> -->
                     <li><a href="#publications">Jump to Publications</a></li>
                 </ul>
             </section>
@@ -144,7 +144,7 @@
                                     <img src="images/me.png" alt="Portrait of Ning Zheng">
                                 </div>
                                 <p>
-                                    Hi!👋👋👋 I'm Ning Zheng (宁政), currently an Applied Scientist at Amazon <img src="images/amazon-icon.svg" alt="Amazon" style="width: auto; height: 1em;"/>, P13N, building generative recommendation systems and intent understanding algorithms at Amazon homepage. I obtained my Ph.D. in Computer Science and Human-Computer Interaction (HCI) at the
+                                    Hi!👋👋👋 I'm Ning Zheng (宁政), currently an Applied Scientist at Amazon <img src="images/amazon-icon.svg" alt="Amazon" style="width: auto; height: 1em;"/>, P13N, building generative recommendation systems and intent understanding algorithms for Amazon homepage. I obtained my Ph.D. in Computer Science and Human-Computer Interaction (HCI) at the
                                     <a href="https://cse.nd.edu/">University of Notre Dame</a> with
                                     <a href="https://toby.li/">Prof. Toby Jia-Jun Li</a>.
                                     My Ph.D. research focused on building multimodal human-AI collaboration systems for augmenting user cognitive capabilities.
@@ -165,16 +165,12 @@
                                 <a class="orbit-social" href="https://www.linkedin.com/in/realningzheng" aria-label="LinkedIn">
                                     <i class="ti-linkedin"></i>
                                 </a>
-                                <a class="orbit-social" href="https://www.instagram.com/_zzzning/" aria-label="Instagram">
+                                <!-- <a class="orbit-social" href="https://www.instagram.com/_zzzning/" aria-label="Instagram">
                                     <i class="ti-instagram"></i>
-                                </a>
+                                </a> -->
                             </div>
                         </div>
-                        <div class="orbit-hero-cards">
-                            <!-- <div class="orbit-card"> -->
-                                <!-- <div class="orbit-card-label">Now</div>
-                                <p>Applied Scientist II at Amazon (P13N), focusing on generative recommenders.</p> -->
-                            <!-- </div> -->
+                        <!-- <div class="orbit-hero-cards">
                             <div class="orbit-card">
                                 <div class="orbit-card-label">Research Interests</div>
                                 <ul>
@@ -184,15 +180,7 @@
                                     <li>Accessibility</li>
                                 </ul>
                             </div>
-                            <!-- <div class="orbit-card">
-                                <div class="orbit-card-label">Selected Systems</div>
-                                <p>
-                                    <a href="https://arxiv.org/abs/2307.15167">PEANUT</a>,
-                                    <a href="https://arxiv.org/abs/2404.15107">MIMOSA</a>,
-                                    <a href="https://arxiv.org/abs/2402.07300">SPICA</a>.
-                                </p>
-                            </div> -->
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </section>
@@ -235,24 +223,49 @@
             <section id="research" class="orbit-section orbit-section-alt">
                 <div class="container">
                     <div class="orbit-section-header">
-                        <h2>Research Systems</h2>
-                        <p>Selected projects from multimodal tooling and accessibility.</p>
+                        <h2>Research Prototypes</h2>
+                        <p>Selected projects during my Ph.D.</p>
                     </div>
-                    <div class="orbit-grid">
+                    <div class="orbit-scroll-container">
                         <article class="orbit-tile">
+                            <div class="orbit-tile-thumb">
+                                <img src="images/projects/aroma.png" alt="AROMA system thumbnail">
+                            </div>
+                            <h4>AROMA</h4>
+                            <p>Mixed-initiative AI assistance for non-visual cooking from videos.</p>
+                            <a href="https://dl.acm.org/doi/abs/10.1145/3746059.3747650">Read the paper</a>
+                        </article>
+                        <article class="orbit-tile">
+                            <div class="orbit-tile-thumb">
+                                <img src="images/projects/agentpbd.png" alt="AgentPbD system thumbnail">
+                            </div>
+                            <h4>AgentPbD</h4>
+                            <p>Agentic workflow generation from user demonstration on web browsers.</p>
+                            <a href="https://ieeexplore.ieee.org/abstract/document/11303521/">Read the paper</a>
+                        </article>
+                        <article class="orbit-tile">
+                            <div class="orbit-tile-thumb">
+                                <img src="images/projects/peanut.png" alt="PEANUT system thumbnail">
+                            </div>
                             <h4>PEANUT</h4>
                             <p>Human-AI collaboration for multimodal video annotation.</p>
                             <a href="https://arxiv.org/abs/2307.15167">Read the paper</a>
                         </article>
                         <article class="orbit-tile">
-                            <h4>MIMOSA</h4>
-                            <p>Human-AI co-creation of spatial audio effects for video.</p>
-                            <a href="https://arxiv.org/abs/2404.15107">Read the paper</a>
-                        </article>
-                        <article class="orbit-tile">
+                            <div class="orbit-tile-thumb">
+                                <img src="images/projects/spica.png" alt="SPICA system thumbnail">
+                            </div>
                             <h4>SPICA</h4>
                             <p>Interactive audio descriptions for blind and low-vision viewers.</p>
                             <a href="https://arxiv.org/abs/2402.07300">Read the paper</a>
+                        </article>
+                        <article class="orbit-tile">
+                            <div class="orbit-tile-thumb">
+                                <img src="images/projects/mimosa.png" alt="MIMOSA system thumbnail">
+                            </div>
+                            <h4>MIMOSA</h4>
+                            <p>Human-AI co-creation of spatial audio effects for video.</p>
+                            <a href="https://arxiv.org/abs/2404.15107">Read the paper</a>
                         </article>
                     </div>
                 </div>
@@ -260,6 +273,7 @@
 
             <div class="divider1"></div>
 
+            <!-- News Section (commented out)
             <section id="news" class="section-padding animate-box" data-animate-effect="fadeInUp" style="height: 50vh; overflow: hidden; position: relative; transition: height 0.3s ease;">
                 <button onclick="toggleSection(this)" style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); background: #fff; border: 1px solid #ddd; padding: 5px 15px; cursor: pointer;">Show More</button>
                 <script>
@@ -277,15 +291,11 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <!-- <div class="section-subtitle">Resume</div> -->
                             <div class="section-title">News</div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-10">
-                            <!-- <div class="blog-sidebar row">
-                                <div class="col-md-12">
-                                    <div class="widget"> -->
                             <ul class="recent">
                                 <li>
                                     <b>06/2024</b>
@@ -404,13 +414,11 @@
                                     <p>☘️ Started my Ph.D. journey at <a href=""> University of Notre Dame</a> </p>
                                 </li>
                             </ul>
-                            <!-- </div>
-                                </div>
-                            </div> -->
                         </div>
                     </div>
                 </div>
             </section>
+            -->
             <div class="divider1"></div>
             <!-- <section class="section-padding animate-box" data-animate-effect="fadeInUp">
                 <div class="container">
@@ -449,267 +457,217 @@
             <!-- Skills -->
 
             <div class="divider1"></div>
-            <section id="publications" class="section-padding animate-box" data-animate-effect="fadeInUp">
+            <section id="publications" class="orbit-section">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <!-- <div class="section-subtitle">Resume</div> -->
-                            <div class="section-title"> Publications</div>
-                        </div>
+                    <div class="orbit-section-header">
+                        <h2>Publications</h2>
+                        <p>Peer-reviewed papers from my research.</p>
                     </div>
 
-                    <div class="row" style="align-items: top;">
-                        <div class="col-md-2 mx-auto d-flex flex-column align-items-center">
-                            <!-- <img src="images/divider-vertical.svg" class="img-fluid mx-auto d-block" alt=""> -->
-                            <div class="gallery-item">
-                                <a href="images/projects/vlhcc.png" title="" class="img-zoom">
-                                    <div class="gallery-box">
-                                        <div class="gallery-img"> <img src="images/projects/vlhcc.png"
-                                                class="img-fluid mx-auto d-block" alt=""> </div>
-                                    </div>
+                    <!-- Publication: UIST 2025 -->
+                    <article class="pub-card">
+                        <a href="images/projects/aroma.png" class="pub-card-thumb img-zoom">
+                            <img src="images/projects/aroma.png" alt="AROMA thumbnail">
+                        </a>
+                        <div class="pub-card-content">
+                            <h3 class="pub-card-title">AROMA: Mixed-Initiative AI Assistance for Non-Visual Cooking by Grounding Multimodal Information Between Reality and Videos</h3>
+                            <p class="pub-card-authors"><span class="author-highlight">Zheng Ning</span>, Leyang Li, Daniel Killough, JooYoung Seo, Patrick Carrington, Yapeng Tian, Yuhang Zhao, Franklin Mingzhe Li, Toby Jia-Jun Li</p>
+                            <p class="pub-card-venue">UIST 2025</p>
+                            <div class="pub-card-links">
+                                <a href="https://dl.acm.org/doi/pdf/10.1145/3746059.3747650" class="pub-card-link">
+                                    <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 2l5 5h-5V4zm-3 9H7v-1h3v1zm5 4H7v-1h8v1zm0-2H7v-1h8v1z"/></svg>
+                                    PDF
+                                </a>
+                                <a href="https://www.youtube.com/watch?v=hi7YsFJp5KQ" class="pub-card-link">
+                                    <svg viewBox="0 0 24 24"><path d="M10 16.5l6-4.5-6-4.5v9zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg>
+                                    Video
                                 </a>
                             </div>
-                            <div class="conference-box">
-                                V L / H C C ' 2 4
-                            </div>
                         </div>
-                        <div class="col-md-9">
-                            <div class="project-desc mt-10">
-                                <h6 class="mb-2">
-                                    <b>Developer Behaviors in Validating and Repairing LLM-Generated Code Using IDE and Eye Tracking
-                                        <a href="https://arxiv.org/pdf/2405.16081">[Paper]</a>
-                                    </b>
-                                </h6>
-                                <p>Ningzhi Tang*, Meng Chen*, <b>Zheng Ning</b>, Aakash Bansal, Yu Huang, Collin McMillan, and Toby Li
-                                    <br>
-                                    <i> 2024 IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC 2024)</i>
-                            </div>
-                        </div>
-                    </div>
-                    <h1></h1>
+                    </article>
 
-                    <div class="row" style="align-items: top;">
-                        <div class="col-md-2 mx-auto d-flex flex-column align-items-center">
-                            <!-- <img src="images/divider-vertical.svg" class="img-fluid mx-auto d-block" alt=""> -->
-                            <div class="gallery-item">
-                                <a href="images/projects/podreels.png" title="" class="img-zoom">
-                                    <div class="gallery-box">
-                                        <div class="gallery-img"> <img src="images/projects/podreels.png"
-                                                class="img-fluid mx-auto d-block" alt=""> </div>
-                                    </div>
+                    <!-- Publication: VL/HCC 2025 -->
+                    <article class="pub-card">
+                        <a href="images/projects/agentpbd.png" class="pub-card-thumb img-zoom">
+                            <img src="images/projects/agentpbd.png" alt="AgentPbD thumbnail">
+                        </a>
+                        <div class="pub-card-content">
+                            <h3 class="pub-card-title">AgentPbD: Interactive Agentic Workflow Generation from User Demonstration on Web Browsers</h3>
+                            <p class="pub-card-authors">Jiawen Li, <span class="author-highlight">Zheng Ning</span>, Yuan Tian, Toby Jia-Jun Li</p>
+                            <p class="pub-card-venue">VL/HCC 2025</p>
+                            <div class="pub-card-links">
+                                <a href="https://yuan-tian.com/yuantian_files/VLHCC_2025.pdf" class="pub-card-link">
+                                    <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 2l5 5h-5V4zm-3 9H7v-1h3v1zm5 4H7v-1h8v1zm0-2H7v-1h8v1z"/></svg>
+                                    PDF
                                 </a>
                             </div>
-                            <div class="conference-box">
-                                D I S ' 2 4
-                            </div>
                         </div>
-                        <div class="col-md-9">
-                            <div class="project-desc mt-10">
-                                <h6 class="mb-2">
-                                    <b>PodReels: Human-AI Co-Creation of Video Podcast Teasers
-                                        <a href="https://arxiv.org/abs/2311.05867">[Paper]</a>
-                                        <a href="https://www.youtube.com/watch?v=qSLscIC9U7E">[Video]</a>
-                                        <a href="https://youtu.be/wMr7P7u0MdY">[Preview]</a>
-                                    </b>
-                                </h6>
-                                <p>Sitong Wang, <b>Zheng Ning</b>, Anh Truong, Mira Dontcheva, Dingzeyu Li, Lydia B.
-                                    Chilton
-                                    <br>
-                                    <i> Proceedings of the 2024 ACM Designing Interactive Systems Conference
-                                        (DIS'24)</i>
-                            </div>
-                        </div>
-                    </div>
-                    <h1></h1>
+                    </article>
 
-                    <div class="row" style="align-items: top;">
-                        <div class="col-md-2 mx-auto d-flex flex-column align-items-center">
-                            <!-- <img src="images/divider-vertical.svg" class="img-fluid mx-auto d-block" alt=""> -->
-                            <div class="gallery-item">
-                                <a href="images/projects/mimosa.png" title="" class="img-zoom">
-                                    <div class="gallery-box">
-                                        <div class="gallery-img"> <img src="images/projects/mimosa.png"
-                                                class="img-fluid mx-auto d-block" alt=""> </div>
-                                    </div>
+                    <!-- Publication: VL/HCC 2024 -->
+                    <article class="pub-card">
+                        <a href="images/projects/vlhcc.png" class="pub-card-thumb img-zoom">
+                            <img src="images/projects/vlhcc.png" alt="Developer Behaviors thumbnail">
+                        </a>
+                        <div class="pub-card-content">
+                            <h3 class="pub-card-title">Developer Behaviors in Validating and Repairing LLM-Generated Code Using IDE and Eye Tracking</h3>
+                            <p class="pub-card-authors">Ningzhi Tang*, Meng Chen*, <span class="author-highlight">Zheng Ning</span>, Aakash Bansal, Yu Huang, Collin McMillan, and Toby Li</p>
+                            <p class="pub-card-venue">VL/HCC 2024</p>
+                            <div class="pub-card-links">
+                                <a href="https://arxiv.org/pdf/2405.16081" class="pub-card-link">
+                                    <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 2l5 5h-5V4zm-3 9H7v-1h3v1zm5 4H7v-1h8v1zm0-2H7v-1h8v1z"/></svg>
+                                    PDF
                                 </a>
                             </div>
-                            <div class="conference-box">
-                                C & C ' 2 4
-                            </div>
                         </div>
-                        <div class="col-md-9">
-                            <div class="project-desc mt-10">
-                                <h6 class="mb-2">
-                                    <b>MIMOSA: Human-AI Co-Creation of Computational Spatial Audio Effects on Videos
-                                        <a href="https://arxiv.org/abs/2404.15107">[Paper]</a>
-                                        <a href="https://zning.co/mimosa">[Project]</a>
-                                    </b>
-                                </h6>
-                                <p><b>Zheng Ning*</b>, Zheng Zhang*, Jerrick Ban, Kaiwen Jiang, Ruohong Gan, Yapeng
-                                    Tian, and Toby Li
-                                    <br>
-                                    <i>Proceedings of the 15th Conference on Creativity and Cognition (C&C'24)</i>
-                            </div>
-                        </div>
-                    </div>
-                    <h1></h1>
+                    </article>
 
-                    <div class="row" style="align-items: top;">
-                        <div class="col-md-2 mx-auto d-flex flex-column align-items-center">
-                            <!-- <img src="images/divider-vertical.svg" class="img-fluid mx-auto d-block" alt=""> -->
-                            <div class="gallery-item">
-                                <a href="images/projects/spica.png" title="" class="img-zoom">
-                                    <div class="gallery-box">
-                                        <div class="gallery-img"> <img src="images/projects/spica.png"
-                                                class="img-fluid mx-auto d-block" alt=""> </div>
-                                    </div>
+                    <!-- Publication 2: DIS 2024 -->
+                    <article class="pub-card">
+                        <a href="images/projects/podreels.png" class="pub-card-thumb img-zoom">
+                            <img src="images/projects/podreels.png" alt="PodReels thumbnail">
+                        </a>
+                        <div class="pub-card-content">
+                            <h3 class="pub-card-title">PodReels: Human-AI Co-Creation of Video Podcast Teasers</h3>
+                            <p class="pub-card-authors">Sitong Wang, <span class="author-highlight">Zheng Ning</span>, Anh Truong, Mira Dontcheva, Dingzeyu Li, Lydia B. Chilton</p>
+                            <p class="pub-card-venue">DIS 2024</p>
+                            <div class="pub-card-links">
+                                <a href="https://arxiv.org/abs/2311.05867" class="pub-card-link">
+                                    <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 2l5 5h-5V4zm-3 9H7v-1h3v1zm5 4H7v-1h8v1zm0-2H7v-1h8v1z"/></svg>
+                                    PDF
+                                </a>
+                                <a href="https://www.youtube.com/watch?v=qSLscIC9U7E" class="pub-card-link">
+                                    <svg viewBox="0 0 24 24"><path d="M10 16.5l6-4.5-6-4.5v9zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg>
+                                    Video
+                                </a>
+                                <a href="https://youtu.be/wMr7P7u0MdY" class="pub-card-link">
+                                    <svg viewBox="0 0 24 24"><path d="M10 16.5l6-4.5-6-4.5v9zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg>
+                                    Preview
                                 </a>
                             </div>
-                            <div class="conference-box">
-                                C H I ' 2 4
-                            </div>
                         </div>
-                        <div class="col-md-9">
-                            <div class="project-desc mt-9">
-                                <h6 class="mb-2">
-                                    <b>SPICA: Interactive Video Content Exploration through Augmented Audio Descriptions
-                                        for Blind or Low-Vision Viewers
-                                        <a href="https://arxiv.org/abs/2402.07300">[Paper]</a>
-                                        <a href="https://sites.google.com/nd.edu/spica/home">[Project]</a>
-                                    </b>
-                                </h6>
-                                <p><b>Zheng Ning</b>, Brianna Wimer, Kaiwen Jiang, Keyi Chen, Jerrick Ban, Yapeng Tian,
-                                    Yuhang Zhao, and Toby Li
-                                    <br>
-                                    <i>In Proceedings of the CHI Conference on Human Factors in Computing Systems
-                                        (CHI'24)</i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row" style="align-items: top;">
-                        <div class="col-md-2 mx-auto d-flex flex-column align-items-center">
-                            <!-- <img src="images/divider-vertical.svg" class="img-fluid mx-auto d-block" alt=""> -->
-                            <div class="gallery-item">
-                                <a href="images/projects/tiis.png" title="" class="img-zoom">
-                                    <div class="gallery-box">
-                                        <div class="gallery-img"> <img src="images/projects/tiis.png"
-                                                class="img-fluid mx-auto d-block" alt=""> </div>
-                                    </div>
+                    </article>
+
+                    <!-- Publication 3: C&C 2024 -->
+                    <article class="pub-card">
+                        <a href="images/projects/mimosa.png" class="pub-card-thumb img-zoom">
+                            <img src="images/projects/mimosa.png" alt="MIMOSA thumbnail">
+                        </a>
+                        <div class="pub-card-content">
+                            <h3 class="pub-card-title">MIMOSA: Human-AI Co-Creation of Computational Spatial Audio Effects on Videos</h3>
+                            <p class="pub-card-authors"><span class="author-highlight">Zheng Ning*</span>, Zheng Zhang*, Jerrick Ban, Kaiwen Jiang, Ruohong Gan, Yapeng Tian, and Toby Li</p>
+                            <p class="pub-card-venue">C&C 2024</p>
+                            <div class="pub-card-links">
+                                <a href="https://arxiv.org/abs/2404.15107" class="pub-card-link">
+                                    <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 2l5 5h-5V4zm-3 9H7v-1h3v1zm5 4H7v-1h8v1zm0-2H7v-1h8v1z"/></svg>
+                                    PDF
+                                </a>
+                                <a href="https://zning.co/mimosa" class="pub-card-link">
+                                    <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                                    Project
                                 </a>
                             </div>
-                            <div class="conference-box">
-                                T i i S ' 2 4
-                            </div>
                         </div>
-                        <div class="col-md-9">
-                            <div class="project-desc mt-9">
-                                <h6 class="mb-2">
-                                    <b>Insights into Natural Language Database Query Errors: From Attention Misalignment
-                                        to User Handling Strategies
-                                        <a href="https://arxiv.org/abs/2402.07304">[Paper]</a>
-                                    </b>
-                                </h6>
-                                <p><b>Zheng Ning*</b>, Yuan Tian*, Zheng Zhang, Tianyi Zhang, Toby Li
-                                    <br>
-                                    <i>ACM Transactions on Interactive Intelligent Systems (TiiS) IUI-2023 special
-                                        issue</i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row" style="align-items: top;">
-                        <div class="col-md-2 mx-auto d-flex flex-column align-items-center">
-                            <!-- <img src="images/divider-vertical.svg" class="img-fluid mx-auto d-block" alt=""> -->
-                            <div class="gallery-item">
-                                <a href="images/projects/peanut.png" title="" class="img-zoom">
-                                    <div class="gallery-box">
-                                        <div class="gallery-img"> <img src="images/projects/peanut.png"
-                                                class="img-fluid mx-auto d-block" alt=""> </div>
-                                    </div>
+                    </article>
+
+                    <!-- Publication 4: CHI 2024 -->
+                    <article class="pub-card">
+                        <a href="images/projects/spica.png" class="pub-card-thumb img-zoom">
+                            <img src="images/projects/spica.png" alt="SPICA thumbnail">
+                        </a>
+                        <div class="pub-card-content">
+                            <h3 class="pub-card-title">SPICA: Interactive Video Content Exploration through Augmented Audio Descriptions for Blind or Low-Vision Viewers</h3>
+                            <p class="pub-card-authors"><span class="author-highlight">Zheng Ning</span>, Brianna Wimer, Kaiwen Jiang, Keyi Chen, Jerrick Ban, Yapeng Tian, Yuhang Zhao, and Toby Li</p>
+                            <p class="pub-card-venue">CHI 2024</p>
+                            <div class="pub-card-links">
+                                <a href="https://arxiv.org/abs/2402.07300" class="pub-card-link">
+                                    <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 2l5 5h-5V4zm-3 9H7v-1h3v1zm5 4H7v-1h8v1zm0-2H7v-1h8v1z"/></svg>
+                                    PDF
+                                </a>
+                                <a href="https://sites.google.com/nd.edu/spica/home" class="pub-card-link">
+                                    <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                                    Project
                                 </a>
                             </div>
-                            <div class="conference-box">
-                                U I S T ' 2 3
-                            </div>
                         </div>
-                        <div class="col-md-9">
-                            <div class="project-desc mt-9">
-                                <h6 class="mb-2">
-                                    <b>PEANUT: A Human-AI Collaborative Tool for Annotating Audio-Visual Data
-                                        <a href="https://arxiv.org/abs/2307.15167">[Paper]</a>
-                                        <a href="https://www.youtube.com/watch?v=fGxA4E6vaEA">[Video]</a>
-                                    </b>
-                                </h6>
-                                <p>Zheng Zhang*, <b>Zheng Ning*</b>, Chenliang Xu, Yapeng Tian, and Toby Li
-                                    <br>
-                                    <i>In Proceedings of the 36th Annual ACM Symposium on User Interface Software and
-                                        Technology (UIST'23)</i>
-                            </div>
-                        </div>
-                    </div>
-                    <h1></h1>
-                    <div class="row" style="align-items: top;">
-                        <div class="col-md-2 mx-auto d-flex flex-column align-items-center">
-                            <!-- <img src="images/divider-vertical.svg" class="img-fluid mx-auto d-block" alt=""> -->
-                            <div class="gallery-item">
-                                <a href="images/projects/step_by_step.png" title="" class="img-zoom">
-                                    <div class="gallery-box">
-                                        <div class="gallery-img"> <img src="images/projects/step_by_step.png"
-                                                class="img-fluid mx-auto d-block" alt=""> </div>
-                                    </div>
+                    </article>
+
+                    <!-- Publication 5: TiiS 2024 -->
+                    <article class="pub-card">
+                        <a href="images/projects/tiis.png" class="pub-card-thumb img-zoom">
+                            <img src="images/projects/tiis.png" alt="TiiS thumbnail">
+                        </a>
+                        <div class="pub-card-content">
+                            <h3 class="pub-card-title">Insights into Natural Language Database Query Errors: From Attention Misalignment to User Handling Strategies</h3>
+                            <p class="pub-card-authors"><span class="author-highlight">Zheng Ning*</span>, Yuan Tian*, Zheng Zhang, Tianyi Zhang, Toby Li</p>
+                            <p class="pub-card-venue">TiiS (IUI 2023 Special Issue)</p>
+                            <div class="pub-card-links">
+                                <a href="https://arxiv.org/abs/2402.07304" class="pub-card-link">
+                                    <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 2l5 5h-5V4zm-3 9H7v-1h3v1zm5 4H7v-1h8v1zm0-2H7v-1h8v1z"/></svg>
+                                    PDF
                                 </a>
                             </div>
-                            <div class="conference-box">
-                                E M N L P ' 2 3
-                            </div>
                         </div>
-                        <div class="col-md-9">
-                            <div class="project-desc mt-9">
-                                <h6 class="mb-2">
-                                    <b>Interactive Text-to-SQL Generation via Editable Step-by-Step Explanations
-                                        <a href="https://arxiv.org/abs/2305.07372">[Paper]</a>
-                                    </b>
-                                </h6>
-                                <p>Yuan Tian, Zheng Zhang, <b>Zheng Ning</b>, Toby Jia-Jun Li, Jonathan K. Kummerfeld,
-                                    Tianyi Zhang
-                                    <br>
-                                    <i>The 2023 Conference on Empirical Methods in Natural Language Processing
-                                        (EMNLP'23)</i>
-                            </div>
-                        </div>
-                    </div>
-                    <h1></h1>
-                    <div class="row" style="align-items: top;">
-                        <div class="col-md-2 mx-auto d-flex flex-column align-items-center">
-                            <!-- <img src="images/divider-vertical.svg" class="img-fluid mx-auto d-block" alt=""> -->
-                            <div class="gallery-item">
-                                <a href="images/projects/nlq2.png" title="" class="img-zoom">
-                                    <div class="gallery-box">
-                                        <div class="gallery-img"> <img src="images/projects/nlq.png"
-                                                class="img-fluid mx-auto d-block" alt=""> </div>
-                                    </div>
+                    </article>
+
+                    <!-- Publication 6: UIST 2023 -->
+                    <article class="pub-card">
+                        <a href="images/projects/peanut.png" class="pub-card-thumb img-zoom">
+                            <img src="images/projects/peanut.png" alt="PEANUT thumbnail">
+                        </a>
+                        <div class="pub-card-content">
+                            <h3 class="pub-card-title">PEANUT: A Human-AI Collaborative Tool for Annotating Audio-Visual Data</h3>
+                            <p class="pub-card-authors">Zheng Zhang*, <span class="author-highlight">Zheng Ning*</span>, Chenliang Xu, Yapeng Tian, and Toby Li</p>
+                            <p class="pub-card-venue">UIST 2023</p>
+                            <div class="pub-card-links">
+                                <a href="https://arxiv.org/abs/2307.15167" class="pub-card-link">
+                                    <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 2l5 5h-5V4zm-3 9H7v-1h3v1zm5 4H7v-1h8v1zm0-2H7v-1h8v1z"/></svg>
+                                    PDF
+                                </a>
+                                <a href="https://www.youtube.com/watch?v=fGxA4E6vaEA" class="pub-card-link">
+                                    <svg viewBox="0 0 24 24"><path d="M10 16.5l6-4.5-6-4.5v9zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg>
+                                    Video
                                 </a>
                             </div>
-                            <div class="conference-box">
-                                I U I ' 2 3
+                        </div>
+                    </article>
+
+                    <!-- Publication 7: EMNLP 2023 -->
+                    <article class="pub-card">
+                        <a href="images/projects/step_by_step.png" class="pub-card-thumb img-zoom">
+                            <img src="images/projects/step_by_step.png" alt="Step-by-Step thumbnail">
+                        </a>
+                        <div class="pub-card-content">
+                            <h3 class="pub-card-title">Interactive Text-to-SQL Generation via Editable Step-by-Step Explanations</h3>
+                            <p class="pub-card-authors">Yuan Tian, Zheng Zhang, <span class="author-highlight">Zheng Ning</span>, Toby Jia-Jun Li, Jonathan K. Kummerfeld, Tianyi Zhang</p>
+                            <p class="pub-card-venue">EMNLP 2023</p>
+                            <div class="pub-card-links">
+                                <a href="https://arxiv.org/abs/2305.07372" class="pub-card-link">
+                                    <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 2l5 5h-5V4zm-3 9H7v-1h3v1zm5 4H7v-1h8v1zm0-2H7v-1h8v1z"/></svg>
+                                    PDF
+                                </a>
                             </div>
                         </div>
-                        <div class="col-md-9">
-                            <div class="project-desc mt-9">
-                                <h6 class="mb-2">
-                                    <b>An Empirical Study of Model Errors & User Error Discovery and Repair
-                                        Strategies in Natural Language Database
-                                        Queries
-                                        <a href="https://dl.acm.org/doi/abs/10.1145/3581641.3584067">[Paper]</a>
-                                    </b>
-                                </h6>
-                                <p><b>Zheng Ning*</b>, Zheng Zhang*, Tianyi Sun, Tian Yuan, Tianyi Zhang, and Toby Li
-                                    <br>
-                                    <i>The 26th International Conference on Intelligent User Interfaces
-                                        (IUI'23)</i>
+                    </article>
+
+                    <!-- Publication 8: IUI 2023 -->
+                    <article class="pub-card">
+                        <a href="images/projects/nlq2.png" class="pub-card-thumb img-zoom">
+                            <img src="images/projects/nlq.png" alt="NLQ Study thumbnail">
+                        </a>
+                        <div class="pub-card-content">
+                            <h3 class="pub-card-title">An Empirical Study of Model Errors & User Error Discovery and Repair Strategies in Natural Language Database Queries</h3>
+                            <p class="pub-card-authors"><span class="author-highlight">Zheng Ning*</span>, Zheng Zhang*, Tianyi Sun, Tian Yuan, Tianyi Zhang, and Toby Li</p>
+                            <p class="pub-card-venue">IUI 2023</p>
+                            <div class="pub-card-links">
+                                <a href="https://dl.acm.org/doi/abs/10.1145/3581641.3584067" class="pub-card-link">
+                                    <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 2l5 5h-5V4zm-3 9H7v-1h3v1zm5 4H7v-1h8v1zm0-2H7v-1h8v1z"/></svg>
+                                    PDF
+                                </a>
                             </div>
                         </div>
-                    </div>
-                    <h1></h1>
+                    </article>
+
                 </div>
             </section>
             <div class="divider1"></div>
